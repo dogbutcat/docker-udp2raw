@@ -27,6 +27,7 @@ COPY script script
 # RUN /sbin/service sshd start && /sbin/service sshd stop
 
 ENV R_PORT="5678"
+ENV R_IP=
 
 # CMD ["/usr/sbin/sshd", "-D" ]
 # find options here https://github.com/wangyu-/udp2raw-tunnel/blob/master/doc/README.zh-cn.md#%E5%91%BD%E4%BB%A4%E9%80%89%E9%A1%B9
