@@ -6,9 +6,10 @@ RUN apk add vim lsof tar bind-tools
 # RUN apk add py-pip libsodium
 WORKDIR /opt/udp2raw
 ENV PATH="/opt/udp2raw:${PATH}"
+ENV UDP2RAW_VERSION=20200818.0
 
-# UDP2raw 20181113.0
-RUN wget https://github.com/wangyu-/udp2raw-tunnel/releases/download/20181113.0/udp2raw_binaries.tar.gz &&\
+
+RUN wget https://github.com/wangyu-/udp2raw-tunnel/releases/download/${UDP2RAW_VERSION}/udp2raw_binaries.tar.gz &&\
 	tar xzvf udp2raw_binaries.tar.gz
 
 # copy pre-setting to workspace
