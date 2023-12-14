@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.19
 
 # prepare everything
 RUN apk update
@@ -6,7 +6,7 @@ RUN apk add vim lsof tar bind-tools
 # RUN apk add py-pip libsodium
 WORKDIR /opt/udp2raw
 ENV PATH="/opt/udp2raw:${PATH}"
-ENV UDP2RAW_VERSION=20200818.0
+ENV UDP2RAW_VERSION=20230206.0
 
 
 RUN wget https://github.com/wangyu-/udp2raw-tunnel/releases/download/${UDP2RAW_VERSION}/udp2raw_binaries.tar.gz &&\

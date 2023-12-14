@@ -4,6 +4,10 @@
 
 ## Change Log
 
+> 2023-12
+
+- update udpspeeder to 20230206.0
+
 > 2021-09
 
 - update udp2raw version
